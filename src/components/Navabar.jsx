@@ -16,7 +16,7 @@ const Navabar = () => {
             <li href="" className='cursor-pointer hover:text-gray-400'><Link to='portofolio'> Our portofolio</Link></li>
           
         </ul>
-        <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Plan a meeting</button> 
+        <button className='hidden md:block bg-white px-8 py-2 rounded-full'> <Link to='meeting'> Plan a meeting</Link></button> 
        
        </div>
     </div>
