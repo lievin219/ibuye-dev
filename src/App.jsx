@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import {Routes,Route} from 'react-router-dom'
 import './App.css'
-import Navabar from './components/Navabar'
+import Header from './components/Header'
+
 import Footer from './components/Footer'
 import ServicesPage from './Pages/ServicePage'
 import WhyRwandaPage from './Pages/whyRwandaPage'
@@ -17,7 +18,8 @@ function App() {
   return (
     <>
     <Router>
-      <Navabar />
+   
+      <Header/>
    <Routes>
    <Route path='/service' element={<ServicesPage/>}/>
    <Route path='/about' element={<About/>}/>
