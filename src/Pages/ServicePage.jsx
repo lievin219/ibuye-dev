@@ -4,21 +4,22 @@ import servicess from '../assets/servicess.jpg'
 
 const ServicesPage = () => {
   return (
-    <div className="bg-gray-50 py-16">
+    <div className="">
       <div className="container mx-auto">
         {/* Navbar (You can reuse the Navbar component here) */}
      
 
         {/* Hero Section */}
    <div className='flex flex-row gap-20  justify-center items-center p-4'>
-        <img src={services} alt="" className='w-65 h-65 object-contain rounded shadow-md'/> 
-            <img src={servicess} alt="" className='w-65 h-auto object-contain rounded shadow-md'/>
+     
+            <img src={servicess} alt="" className='w-65 h-auto object-contain rounded shadow-md mt-10'/>
+            <img src={services} alt="" className='w-65 h-auto object-contain rounded shadow-md'/> 
             </div>
         <div className="text-center mb-16">
 
             
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">OUR REAL ESTATE SERVICE</h1>
-          <p className="text-gray-700">
+          <h1 className="text-lg   mb-4 font-bold text-left">OUR REAL ESTATE SERVICE</h1>
+          <p className="">
             Explore Our Extensive Portfolio Of Carefully Curated Properties, We Provide. [cite: 40, 41]
             Detailed Listings With High Quality Photos And Comprehensive Descriptioris
             To Help You Find The Perfect Match For Your Needs.
@@ -86,19 +87,7 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        {/* Contact Section (Bottom) */}
-        <div className="text-center mt-16 py-8 border-t border-gray-200">
-          <p className="text-gray-700 mb-8">
-            Thank you for considering IBUYE for your real estate needs. [cite: 49, 50] We look
-            forward to hearing from you and assisting you on your real estate journey.
-          </p>
-          <a
-            href="/contact"
-            className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition duration-300"
-          >
-            Get in touch →
-          </a>
-        </div>
+        
 
           
       </div>

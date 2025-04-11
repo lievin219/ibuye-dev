@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import {Routes,Route} from 'react-router-dom'
 import './App.css'
-import Header from './components/Header'
+import Navbar from './components/Navabar'
 
 import Footer from './components/Footer'
 import ServicesPage from './Pages/ServicePage'
@@ -19,7 +19,7 @@ function App() {
     <>
     <Router>
    
-      <Header/>
+     <Navbar/>
    <Routes>
    <Route path='/service' element={<ServicesPage/>}/>
    <Route path='/about' element={<About/>}/>

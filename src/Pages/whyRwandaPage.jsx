@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhyRwandaPage = () => {
   return (
-    <div className="bg-gray-50 py-12">
+    <div className="pt-20">"
       <div className="container mx-auto">
         
        
@@ -10,22 +10,23 @@ const WhyRwandaPage = () => {
         {/* Hero Section */}
         <div className="text-left mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
-            Rwanda's Real Estate Market
+         
           </h1>
-          <p className="text-gray-700">
+          <p className="text-blue-400 text-sm max-w-3xl">
             Rwanda's real estate market is booming, driven by rapid urbanization, a growing middle
             class, and strong government support. Whether for investment, residential living, or
             commercial development, Rwanda offers vast opportunities in a stable and business-
             friendly environment.
           </p>
+
         </div>
 
         {/* Economic Outlook Section */}
-        <div className="mb-10">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Rwanda's Economic Outlook
+        <div className="mb-10 flex flex-col gap-7">
+          <h2 className="text-lg font-semibold text-left">
+          Let’s look at Rwanda’s economic outlook.
           </h2>
-          <ol className="list-decimal pl-5 text-gray-700">
+          <ol className="list-decimal pl-5 text-base font-semibold max-w-4xl">
             <li className="mb-2">
               Rwanda's GDP growth rate has been consistently strong, with an estimated growth of 8% in 2022, one of the
               highest in Africa. This growth is expected to continue, driving demand for both residential and commercial
@@ -47,11 +48,11 @@ const WhyRwandaPage = () => {
         </div>
 
         {/* Housing Market Section */}
-        <div>
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Rwanda's Housing Market
+        <div className='flex flex-col gap-7'>
+          <h2 className="text-lg font-semibold text-left text-blue-400">
+          Let’s look at Rwanda's Housing Market
           </h2>
-          <ol className="list-decimal pl-5 text-gray-700">
+          <ol className="list-decimal pl-5 text-base font-semibold max-w-5xl">
             <li className="mb-2">
               The government's Vision 2050 plan aims to have 70% of the population living in urban areas by 2050,
               underscoring the strategic importance of urbanization in Rwanda's future. [cite: 58, 59]
@@ -96,19 +97,7 @@ const WhyRwandaPage = () => {
           </ol>
         </div>
 
-        {/* Contact Section (Bottom) */}
-        <div className="text-center mt-16 py-8 border-t border-gray-200">
-          <p className="text-gray-700 mb-8">
-            Thank you for considering IBUYE for your real estate needs. We look
-            forward to hearing from you and assisting you on your real estate journey.
-          </p>
-          <a
-            href="/contact"
-            className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition duration-300"
-          >
-            Get in touch →
-          </a>
-        </div>
+        
 
       
       </div>

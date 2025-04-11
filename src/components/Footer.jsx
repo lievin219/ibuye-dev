@@ -2,19 +2,23 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10">
+    <footer className="bg-black text-white pt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center">
+      <div className="flex flex-col   gap-8 justify-center">
         {/* Left Section */}
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-between md:justify-start">
-          <div className="text-2xl font-bold mb-4 md:mb-0 md:mr-8">
-            <span className="text-indigo-500">I</span>buye
-          </div>
-          <p className="text-sm text-gray-400 mb-4 md:mb-0">
+        <div className="flex flex-col gap-7 items-center justify-center">
+          
+          <p className="text-sm text-white mb-4 md:mb-0 max-w-lg">
             Thank you for considering IBUYE for your real estate needs. We look
             forward to hearing from you and assisting you on your real estate
             journey.
           </p>
+
+          <div className="flex justify-center md:justify-end lg:justify-end">
+          <button className="bg-white hover:bg-indigo-600 text-black font-semibold py-3 px-6 rounded-md transition duration-300">
+            Get in touch <svg className="inline-block ml-2 w-4 h-4 align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+          </button>
+        </div>
         </div>
 
         {/* Middle Section - Navigation */}
@@ -34,16 +38,19 @@ const Footer = () => {
           {/* Add more navigation links as needed */}
         </div>
 
-        {/* Right Section - Contact Button */}
-        <div className="flex justify-center md:justify-end lg:justify-end">
-          <button className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md transition duration-300">
-            Get in touch <svg className="inline-block ml-2 w-4 h-4 align-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-          </button>
-        </div>
+    
+        
 
         {/* Bottom Section - Social Icons and Copyright */}
-        <div className="md:col-span-2 lg:col-span-4 flex items-center justify-between mt-8 pt-4 border-t border-gray-800">
+        <div className="col-span-2 lg:col-span-4 flex gap-32 items-center justify-between mt-8 pt-4 border-t border-gray-800">
           <div className="flex space-x-4">
+          <div className="text-2xl font-bold mb-4 md:mb-0 md:mr-8">
+            <span className="text-indigo-500">I</span>buye
+          </div>
+
+
+
+
             <a href="#" className="text-gray-400 hover:text-white transition duration-300">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.538V12h2.538V9.797c0-2.506 1.492-3.897 3.777-3.897 1.094.196 2.283.304 3.469.304V9h-2.098c-1.211 0-1.442.579-1.442 1.42v1.728h2.885l-.465 3.004h-2.42V21.878C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
