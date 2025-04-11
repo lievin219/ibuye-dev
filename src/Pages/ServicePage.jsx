@@ -19,33 +19,25 @@ const ServicesPage = () => {
 
             
           <h1 className="text-lg   mb-4 font-bold text-left">OUR REAL ESTATE SERVICE</h1>
-          <p className="">
-            Explore Our Extensive Portfolio Of Carefully Curated Properties, We Provide. [cite: 40, 41]
-            Detailed Listings With High Quality Photos And Comprehensive Descriptioris
-            To Help You Find The Perfect Match For Your Needs.
-          </p>
+         
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col  gap-8 ">
           {/* Service 1 */}
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-white   p-6 text-left">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">
               1. RESIDENTIAL/COMMERCIAL PROPERTY CONSULTING
             </h2>
-            <p className="text-gray-700">
-              Our experienced team of real estate experts is here to guide you through the home-buying process. [cite: 42, 43]
-              From finding the right property to negotiating the best
-              deal and navigating the paperwork, we're with you every step of the way.
-            </p>
+           <p className='text-gray-800'>  Explore our extensive portfolio of carefully curated properties. We provide detailed listings with high-quality photos and comprehensive descriptions to help you find the perfect match for your needs.</p>
           </div>
 
           {/* Service 2 */}
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
+          <div className="bg-white  p-6 text-left">
+            <h2 className="text-xl font-semibold  mb-4">
               2. RESIDENTIAL/COMMERCIAL PROPERTY DEVELOPMENT
             </h2>
-            <p className="text-gray-700">
+            <p className="text-gray-800">
               Our experienced team of real estate experts is here to guide you through the home-buying process. [cite: 42, 43]
               From finding the right property to negotiating the best
               deal and navigating the paperwork, we're with you every step of the way.
@@ -53,8 +45,8 @@ const ServicesPage = () => {
           </div>
 
           {/* Service 3 */}
-           <div className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
+           <div className="bg-white  p-6 text-left">
+            <h2 className="text-xl font-semibold mb-4">
               3. RESIDENTIAL/COMMERCIAL PROPERTY MANAGEMENT
             </h2>
             <p className="text-gray-700">
@@ -65,7 +57,7 @@ const ServicesPage = () => {
           </div>
 
           {/* Service 4 */}
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-white p-6 text-left">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">
               4. LEGAL AND TAX SERVICES
             </h2>
@@ -76,7 +68,7 @@ const ServicesPage = () => {
           </div>
 
           {/* Service 5 */}
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-white  p-6 text-left">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">
               5. DUE DILIGENCE AND FEASIBILITY STUDIES
             </h2>
