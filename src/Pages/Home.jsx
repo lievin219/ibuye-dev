@@ -18,8 +18,12 @@ const Home = () => {
     </div>
    
  <div className='flex flex-row gap-36 container pt-20'>
-  <div>
-<h1 className='pt-20'>About us</h1>
+  <div className='flex flex-col'>
+<h1 className='text-black font-bold pt-20'>About Ibuye</h1>
+<div style={{ backgroundColor: '#004e92' }} className='text-white p-3 rounded-lg max-w-sm text-sm leading-relaxed shadow-md'>
+At IBUYE,We provide residential and commercial real estate services, including transactions, property development
+, consulting, and property management, with local expertise and a global perspective
+</div>
   </div>
   <div>
     <img src={servicess} alt="" className='w-65 h-auto object-contain rounded shadow-md'/>
