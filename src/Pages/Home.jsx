@@ -1,5 +1,6 @@
 import React from 'react';
-import servicess from '/houses.jpg'; // Make sure this path is correct
+import servicess from '/houses.jpg'; 
+import Contact from './Contact';
 
 const Home = () => {
   return (
@@ -17,19 +18,20 @@ const Home = () => {
       </div>
     </div>
    
- <div className='flex flex-row gap-36 container pt-20'>
+ <div className='flex flex-row  container pt-20'>
   <div className='flex flex-col'>
-<h1 className='text-black font-bold pt-20'>About Ibuye</h1>
-<div style={{ backgroundColor: '#004e92' }} className='text-white p-3 rounded-lg max-w-sm text-sm leading-relaxed shadow-md'>
+<h1 className='text-black font-bold pt-20 text-left ml-2.5'>About Ibuye</h1>
+<div style={{ backgroundColor: '#004e92' }} className='text-white p-3 rounded-lg max-w-sm text-sm leading-relaxed shadow-md ml-2'>
 At IBUYE,We provide residential and commercial real estate services, including transactions, property development
 , consulting, and property management, with local expertise and a global perspective
 </div>
   </div>
   <div>
-    <img src={servicess} alt="" className='w-65 h-auto object-contain rounded shadow-md'/>
+    <img src={servicess} alt="" className='w-80 h-72 object-cover rounded-lg shadow-md mr-32 -mt-16'/>
   </div>
 
  </div>
+ <Contact/>
  </>
   );
 };
