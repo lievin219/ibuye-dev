@@ -2,29 +2,23 @@ import React from 'react';
 
 const WhyRwandaPage = () => {
   return (
-    <div className="pt-20">"
-      <div className="container mx-auto">
-        
-       
-
+    <div className="pt-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-left mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">
-         
-          </h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4"></h1>
           <p className="text-blue-400 text-sm max-w-3xl">
             Rwanda's real estate market is booming, driven by rapid urbanization, a growing middle
             class, and strong government support. Whether for investment, residential living, or
             commercial development, Rwanda offers vast opportunities in a stable and business-
             friendly environment.
           </p>
-
         </div>
 
         {/* Economic Outlook Section */}
         <div className="mb-10 flex flex-col gap-7">
           <h2 className="text-lg font-semibold text-left">
-          Let’s look at Rwanda’s economic outlook.
+            Let’s look at Rwanda’s economic outlook.
           </h2>
           <ol className="list-decimal pl-5 text-base font-semibold max-w-4xl">
             <li className="mb-2">
@@ -50,7 +44,7 @@ const WhyRwandaPage = () => {
         {/* Housing Market Section */}
         <div className='flex flex-col gap-7'>
           <h2 className="text-lg font-semibold text-left text-blue-400">
-          Let’s look at Rwanda's Housing Market
+            Let’s look at Rwanda's Housing Market
           </h2>
           <ol className="list-decimal pl-5 text-base font-semibold max-w-5xl">
             <li className="mb-2">
@@ -76,7 +70,7 @@ const WhyRwandaPage = () => {
               Increases of 10-15% for both residential and commercial properties. (Source: Rwanda Development
               Board) [cite: 64, 65]
             </li>
-             <li className="mb-2">
+            <li className="mb-2">
               With Rwanda becoming a popular tourist destination, the demand for vacation homes, especially around
               tourist spots like Volcanoes National Park and Lake Kivu, has seen significant growth. (Source: Rwanda
               Tourism Board) [cite: 65, 66]
@@ -90,16 +84,12 @@ const WhyRwandaPage = () => {
               The country's transparent property acquisition process guarantees secure land tenure, with each
               property assigned a Unique Property Identifier (UPI) for easy ownership verification. [cite: 67, 68]
             </li>
-             <li className="mb-2">
+            <li className="mb-2">
               Foreigners can easily own property in Rwanda, either by purchasing an individual property or establishing
               a company to acquire multiple properties. [cite: 68, 69]
             </li>
           </ol>
         </div>
-
-        
-
-      
       </div>
     </div>
   );

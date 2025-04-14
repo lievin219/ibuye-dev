@@ -1,6 +1,6 @@
 import React from 'react';
-import services from '../assets/services.jpg'
-import servicess from '../assets/servicess.jpg'
+import services from '/brian.jpg'
+import servicess from '/brian.jpg'
 
 const ServicesPage = () => {
   return (
@@ -9,7 +9,7 @@ const ServicesPage = () => {
         {/* Navbar (You can reuse the Navbar component here) */}
      
 
-        {/* Hero Section */}
+        {/* Hero Section */}        
    <div className='flex flex-row gap-20  justify-center items-center p-4'>
      
             <img src={servicess} alt="" className='w-65 h-auto object-contain rounded shadow-md mt-10'/>

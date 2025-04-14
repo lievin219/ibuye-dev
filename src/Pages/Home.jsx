@@ -3,6 +3,7 @@ import servicess from '/houses.jpg'; // Make sure this path is correct
 
 const Home = () => {
   return (
+    <>
     <div
       className="w-full h-screen bg-cover bg-center flex items-center justify-center justify-start"
       style={{ backgroundImage: `url(${servicess})` }}
@@ -15,6 +16,17 @@ const Home = () => {
         <h1 className='text-white text-2xl font-bold mb-4'>Scroll down</h1>
       </div>
     </div>
+   
+ <div className='flex flex-row gap-36 container pt-20'>
+  <div>
+<h1 className='pt-20'>About us</h1>
+  </div>
+  <div>
+    <img src={servicess} alt="" className='w-65 h-auto object-contain rounded shadow-md'/>
+  </div>
+
+ </div>
+ </>
   );
 };
 
