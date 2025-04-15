@@ -7,11 +7,11 @@ const Contact = () => {
         {/* Left Side Contact Section */}
         <div
           style={{ backgroundColor: '#004e92' }}
-          className="text-white p-4 rounded-lg max-w-md text-sm leading-relaxed shadow-md ml-20 h-80"
+          className="text-white p-4 rounded-lg max-w-md text-sm leading-relaxed shadow-md ml-20 h-96"
         >
           <h1 className="pt-16">Contact Us!</h1>
         </div>
-
+   
         <div className="w-1/2">
           <form className="space-y-4">
             {/* Name Field */}
@@ -21,7 +21,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Your Name"
+               
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -33,7 +33,7 @@ const Contact = () => {
                 type="text"
                 id="phone"
                 name="phone"
-                placeholder="Your Phone Number"
+               
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Your Email Address"
+                
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -58,11 +58,12 @@ const Contact = () => {
                 name="message"
                 rows="4"
                 placeholder="Your Message"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
 
-            {/* Submit Button */}
+         
+
             <div className="flex justify-center">
               <button
                 type="submit"
