@@ -2,6 +2,8 @@ import React from 'react';
 import servicess from '/houses.jpg'; 
 import Contact from './Contact';
 import Porto from './Porto';
+import Portofolio from './Portofolio';
+import Stats from './Stats';
 
 const Home = () => {
   return (
@@ -33,6 +35,8 @@ At IBUYE,We provide residential and commercial real estate services, including t
 
  </div>
  <Porto/>
+ <Portofolio/>
+<Stats/>
  <Contact/>
  </>
   );

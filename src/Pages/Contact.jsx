@@ -65,7 +65,7 @@ const Contact = () => {
          
 
             <div className="flex justify-center">
-              <button
+              <button style={{ backgroundColor: '#004e92' }}
                 type="submit"
                 className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none"
               >

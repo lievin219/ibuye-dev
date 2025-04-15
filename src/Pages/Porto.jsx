@@ -3,7 +3,7 @@ import servicess from '/brian.jpg'
 
 const Porto = () => {
   return (
-    <div className="bg-black text-white py-12 px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div className="bg-black text-white py-12 px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
     {/* Left Section */}
     <div className='text-left'>
       <img
@@ -31,14 +31,15 @@ const Porto = () => {
     {/* Right Section */}
     <div>
       <div className="relative mb-6">
+      <h2 className="absolute -top-14 left-4 text-5xl font-bold text-white opacity-10 tracking-widest">
+          SERVICES
+        </h2>
         <img
           src={servicess} // Replace with your actual image
           alt="Real estate"
-          className="w-full"
+          className="w-full mt-5"
         />
-        <h2 className="absolute top-4 left-4 text-5xl font-bold text-white opacity-10 tracking-widest">
-          SERVICES
-        </h2>
+        
       </div>
       <div className="bg-gray-200 text-black p-6 text-sm leading-relaxed">
         Explore our extensive portfolio of carefully curated properties. We provide detailed listings with high-quality photos and comprehensive descriptions to help you find the perfect match for your needs.
