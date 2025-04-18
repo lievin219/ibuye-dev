@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import bgImage from '/brian.jpg'; // replace this path with your image path
+import bgImage from '/houses.jpg'; // replace this path with your image path
 
 const Navbar = () => {
   return (

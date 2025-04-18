@@ -7,7 +7,8 @@ import Stats from './Stats';
 
 const Home = () => {
   return (
-    <>
+  
+   <>
     <div
       className="w-screen  top-0 left-0 z-10 shadow-md h-screen bg-cover bg-center flex items-center  justify-start"
       style={{ backgroundImage: `url(${servicess})` }}
@@ -38,6 +39,7 @@ At IBUYE,We provide residential and commercial real estate services, including t
  <Portofolio/>
 <Stats/>
  <Contact/>
+ 
  </>
   );
 };
