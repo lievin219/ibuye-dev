@@ -1,5 +1,6 @@
 import React from 'react';
 import servicess from '/houses.jpg'; 
+import Questions from './Questions';
 import Contact from './Contact';
 import Porto from './Porto';
 import Portofolio from './Portofolio';
@@ -38,6 +39,7 @@ At IBUYE,We provide residential and commercial real estate services, including t
  <Porto/>
  <Portofolio/>
 <Stats/>
+<Questions/>
  <Contact/>
  
  </>

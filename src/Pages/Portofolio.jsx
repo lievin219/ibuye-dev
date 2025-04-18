@@ -1,90 +1,49 @@
-import React from 'react';
-import brian from '/brian.jpg';
+import React from 'react'
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
-const OverlayCard = ({ position = 'right' }) => {
-  return (
-    <div className="relative">
-      {/* Image */}
-      <img
-        src={brian}
-        alt="Property"
-        className="w-full h-auto rounded-md object-cover shadow-lg"
-      />
-
-      {/* Floating box on large screens, stacked on small screens */}
-      <div
-        className={`bg-white bg-opacity-95 p-4 sm:p-5 md:p-6 rounded-md shadow-md w-full max-w-full sm:max-w-sm md:max-w-md text-sm backdrop-blur-sm
-        absolute ${position === 'right' ? 'right-4' : 'left-4'} bottom-4
-        hidden sm:block`}
-      >
-        <h3 className="text-lg sm:text-xl font-semibold text-black mb-2">RESIDENTIAL FORT’D</h3>
-        <p className="text-gray-600 text-sm sm:text-base mb-2">
-          This Visualization Project Is About The Building In The Historical Center Of Omsk City, Russia.
-          Initially, It Was Built As A Hostel For The 2018 FIFA World Cup, But The Project Was Not Completed As Supposed.
-        </p>
-        <div className="text-gray-700 mb-1">
-          <strong>LOCATION:</strong> KINYINYA KIGALI
-        </div>
-        <div className="text-gray-700 mb-1">
-          <strong>PROJECT TYPE:</strong> Residential
-        </div>
-        <div className="text-gray-700 mb-2">
-          <strong>KEY FEATURES:</strong>
-          <ul className="list-disc list-inside text-gray-600 text-xs sm:text-sm">
-            <li>New Landmark</li>
-            <li>Spacious Interior</li>
-            <li>Artificial Marble Suits</li>
-          </ul>
-        </div>
-        <button className="mt-2 text-black underline hover:text-black">DOWNLOAD BROCHURE</button>
-      </div>
-
-      {/* For small screens — show below the image */}
-      <div className="block sm:hidden mt-4 bg-white p-4 rounded-md shadow-md">
-        <h3 className="text-lg font-semibold text-black mb-2">RESIDENTIAL FORT’D</h3>
-        <p className="text-gray-600 text-sm mb-2">
-          This Visualization Project Is About The Building In The Historical Center Of Omsk City, Russia.
-          Initially, It Was Built As A Hostel For The 2018 FIFA World Cup, But The Project Was Not Completed As Supposed.
-        </p>
-        <div className="text-gray-700 mb-1 text-sm">
-          <strong>LOCATION:</strong> KINYINYA KIGALI
-        </div>
-        <div className="text-gray-700 mb-1 text-sm">
-          <strong>PROJECT TYPE:</strong> Residential
-        </div>
-        <div className="text-gray-700 mb-2 text-sm">
-          <strong>KEY FEATURES:</strong>
-          <ul className="list-disc list-inside text-gray-600 text-xs">
-            <li>New Landmark</li>
-            <li>Spacious Interior</li>
-            <li>Artificial Marble Suits</li>
-          </ul>
-        </div>
-        <button className="mt-2 text-black underline hover:text-black">DOWNLOAD BROCHURE</button>
-      </div>
-    </div>
-  );
-};
+import servicess from '/brian.jpg'
 
 const Portofolio = () => {
   return (
-    <div className="bg-white px-4 py-16 space-y-12 py-20">
-      {/* Header */}
-      <div className="max-w-5xl mx-auto mb-6">
-        <h2 className="text-3xl font-bold text-black-800 mb-2 text-left">OUR PORTOFOLIO</h2>
-        <p className="text-gray-600 text-sm md:text-base max-w-4xl">
-          These project details can be customized and expanded upon for each property listing on your real estate website.
-          Providing comprehensive and accurate information helps potential buyers make informed decisions about the properties you have available.
-        </p>
+    <section className="bg-white py-10 px-6">
+    <h2 className="text-2xl font-bold mb-6">OUR PORTOFOLIO</h2>
+
+    <div className="flex flex-col md:flex-row items-center bg-gray-100 rounded-xl shadow-md overflow-hidden">
+      {/* Left - Image */}
+      <div className="w-full md:w-1/2">
+        <img
+          src={servicess} 
+          alt="Residential Fort'd"
+          className="object-cover w-full h-full"
+        />
       </div>
 
-      {/* Two components: one with right overlay, one with left overlay */}
-      <div className="max-w-5xl mx-auto space-y-12">
-        <OverlayCard position="right" />
-        <OverlayCard position="left" />
+      {/* Right - Text */}
+      <div className="w-full md:w-1/2 p-6 space-y-4 relative">
+        <h3 className="text-xl font-semibold uppercase">Residential Fort'd</h3>
+        <div style={{ backgroundColor: '#004e92' }} className="bg-blue-600 text-white p-4 rounded-md shadow-md">
+          <p className="text-sm leading-relaxed">
+            This visualization project is about the building in the historical center of Kigali, Russia. 
+            Initially, it was built as a hotel for the 2018 FIFA World Cup, but the project was not completed as supposed.
+          </p>
+          <a href="#" className="text-white underline mt-2 inline-block text-sm">
+            More Information
+          </a>
+        </div>
+
+        {/* Navigation Buttons */}
+        <div className="flex gap-2 absolute bottom-4 right-4">
+          <button className="p-2 bg-white rounded shadow hover:bg-gray-200">
+            <ArrowLeft size={18} />
+          </button>
+          <button className="p-2 bg-black text-white rounded shadow hover:bg-gray-800">
+            <ArrowRight size={18} />
+          </button>
+        </div>
       </div>
     </div>
-  );
-};
+  </section>
+  )
+}
 
-export default Portofolio;
+export default Portofolio
