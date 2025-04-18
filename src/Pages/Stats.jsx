@@ -45,10 +45,12 @@ const Stats = () => {
             <img src={servicess} alt="Project 2" className="w-1/2 rounded-md shadow-md object-cover" />
           </div>
 
-          {/* View Project Button */}
-          <button className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">
-          <Link to='/portfolio'>  View Project </Link> <ArrowRight size={16} />
-          </button>
+          <Link
+  to="/portfolio"
+  className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition"
+>
+  View Project <ArrowRight size={16} />
+</Link>
         </div>
 
       </div>

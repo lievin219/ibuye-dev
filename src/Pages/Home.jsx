@@ -23,19 +23,36 @@ const Home = () => {
       </div>
     </div>
    
- <div className='flex flex-row  container pt-20'>
-  <div className='flex flex-col'>
-<h1 className='text-black font-bold pt-20 text-left ml-2.5'>About Ibuye</h1>
-<div style={{ backgroundColor: '#004e92' }} className='text-white p-3 rounded-lg max-w-sm text-sm leading-relaxed shadow-md ml-2'>
-At IBUYE,We provide residential and commercial real estate services, including transactions, property development
-, consulting, and property management, with local expertise and a global perspective
-</div>
-  </div>
-  <div>
-    <img src={servicess} alt="" className='w-80 h-72 object-cover rounded-lg shadow-md mr-32 -mt-16'/>
-  </div>
+    <section className="w-full bg-white py-10 px-4 md:px-10 -ml-">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-8 relative">
 
- </div>
+        {/* Left Section - Text */}
+        <div className="flex-1 space-y-4 relative z-10 mt-24">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">ABOUT IBUYE</h2>
+
+          {/* Blue Box positioned to overlap the image */}
+          <div style={{ backgroundColor: '#004e92' }} className=" text-white text-sm md:text-base p-4  shadow-md 
+                md:absolute md:right-[-60px] md:top-14 w-full md:w-[380px] lg:w-[420px]">
+            <p>
+              At IBUYE, we provide residential and commercial real estate services,
+              including transactions, property development, consulting, and property
+              management, with local expertise and a global perspective.
+            </p>
+          </div>
+        </div>
+
+        {/* Right Section - Image */}
+        <div className="flex-1 z-0">
+          <img
+            src={servicess}
+            alt="Skyscraper buildings"
+            className="w-full h-auto object-cover rounded shadow-md"
+          />
+        </div>
+
+      </div>
+    </section>
+ 
  <Porto/>
  <Portofolio/>
 <Stats/>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import bgImage from '/houses.jpg'; // replace this path with your image path
 
-const Navbar = () => {
+const Navabar = () => {
   return (
     <div
       className="w-full fixed top-0 left-0 z-10 bg-cover bg-center"
@@ -10,7 +10,7 @@ const Navbar = () => {
         backgroundImage: `url(${bgImage})`,
       }}
     >
-      <div className="max-w-[1500px] mx-auto flex items-start justify-between px-6 pt-4">
+      <div className="max-w-[1500px] mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between px-6 pt-4 space-y-4 lg:space-y-0">
 
         {/* Logo */}
         <div className="text-white font-bold text-2xl mr-4 pt-2">
@@ -18,8 +18,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Grid */}
-        <div className="grid grid-cols-3 grid-rows-2 w-[700px] text-sm text-white">
-
+        <div className="grid grid-cols-2 sm:grid-cols-3 grid-rows-3 sm:grid-rows-2 w-full sm:w-[700px] text-sm text-white gap-0">
           {/* Top row */}
           <div className="border-b border-r border-white bg-white text-black p-3 text-center">
             <Link to="/home">Home</Link>
@@ -44,7 +43,7 @@ const Navbar = () => {
         </div>
 
         {/* Plan a Meeting */}
-        <div className="bg-white text-black text-sm ml-4 whitespace-nowrap px-3 py-2 mt-1 rounded-sm">
+        <div className="bg-white text-black text-sm px-3 py-2 rounded-sm whitespace-nowrap">
           <Link to="/meeting">Plan a meeting</Link>
         </div>
       </div>
@@ -52,4 +51,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navabar;
