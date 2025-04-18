@@ -7,7 +7,7 @@ const WhyRwandaPage = () => {
         {/* Hero Section */}
         <div className="text-left mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-4"></h1>
-          <p className="text-blue-400 text-sm max-w-3xl">
+          <p style={{ color: '#004e92' }} className=" text-sm max-w-3xl">
             Rwanda's real estate market is booming, driven by rapid urbanization, a growing middle
             class, and strong government support. Whether for investment, residential living, or
             commercial development, Rwanda offers vast opportunities in a stable and business-
@@ -43,7 +43,7 @@ const WhyRwandaPage = () => {
 
         {/* Housing Market Section */}
         <div className='flex flex-col gap-7'>
-          <h2 className="text-lg font-semibold text-left text-blue-400">
+          <h2 style={{ color: '#004e92' }} className="text-lg font-semibold text-left ">
             Let’s look at Rwanda's Housing Market
           </h2>
           <ol className="list-decimal pl-5 text-base font-semibold max-w-5xl">
