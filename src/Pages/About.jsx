@@ -1,9 +1,13 @@
 import React from 'react'
+import TrustedPartner from './TrustedPartner'
+import WhyChooseIBuye from './WhyChooseIbuye'
 
 const About = () => {
   return (
   <div>
-    hy there
+   <TrustedPartner/>
+   <WhyChooseIBuye/>
+
   </div>
   )
 }

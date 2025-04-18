@@ -3,7 +3,7 @@ import servicess from '/brian.jpg'
 
 const Porto = () => {
   return (
-    <div className="bg-black text-white py-12 px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
+    <div className="bg-black w-screen text-white py-12 px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
     {/* Left Section */}
     <div className='text-left'>
       <img

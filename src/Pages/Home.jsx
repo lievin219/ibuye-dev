@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
     <div
-      className="w-full h-screen bg-cover bg-center flex items-center justify-center justify-start"
+      className="w-screen  top-0 left-0 z-10 shadow-md h-screen bg-cover bg-center flex items-center  justify-start"
       style={{ backgroundImage: `url(${servicess})` }}
     >
       <div className=" bg-opacity-60 p-8 rounded-lg   text-left flex flex-col">
