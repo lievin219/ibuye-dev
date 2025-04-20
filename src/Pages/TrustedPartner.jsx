@@ -1,48 +1,52 @@
 import React from 'react';
-import servicess from '/brian.jpg'
+import servicess from '/brian.jpg';
 
 const TrustedPartner = () => {
   return (
-    <div className="bg-white py-10 md:py-20">
-      <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-start md:items-center justify-between">
+    <div className="bg-white py-14 md:py-24">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-start md:items-center gap-12">
+        
         {/* Image Section */}
-        <div className="w-full md:w-1/2 mb-8 md:mb-0">
+        <div className="w-full md:w-1/2">
           <img
-            src={servicess} // Replace with your actual image URL
+            src={servicess}
             alt="Real Estate Building"
-            className="rounded-md shadow-lg w-full h-2/4 object-cover -mt-40"
+            className="rounded-xl shadow-2xl w-full object-cover h-[400px] md:h-[500px] transform hover:scale-105 transition duration-500 ease-in-out"
           />
         </div>
 
-        {/* Text Content Section */}
-        <div className="w-full md:w-1/2 md:pl-10 lg:pl-16">
-          <h2 className="text-2xl font-bold font-semibold text-gray-800 mb-4">
-            YOUR TRUSTED
-            <br />
-            REAL ESTATE PARTNER
+        {/* Text Section */}
+        <div className="w-full md:w-1/2">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 leading-tight mb-4">
+            Your Trusted <br /> Real Estate Partner
           </h2>
-          <p className="text-gray-600 mb-6 text-sm">
+
+          <p className="text-gray-600 text-base leading-relaxed mb-6">
             Your trusted real estate partners in Rwanda.
           </p>
-          <p className="text-gray-700 mb-6 text-sm">
+
+          <p className="text-gray-700 text-base leading-relaxed mb-4">
             We provide residential and commercial real estate services, including transactions, consulting, and property management across the country. With deep local knowledge and a global perspective, we offer expert guidance tailored to both local and international trends.
           </p>
 
-          <div className="border-t border-gray-300 my-8"></div>
+          <div className="border-t border-gray-300 my-8" />
 
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">OUR STORY</h3>
-          <p className="text-gray-700 mb-4 text-sm">
-          Rwanda is a growing hub for real estate. Whether you're looking for an investment property, vacation home, commercial building, or land – self-built or existing, in Kigali or beyond – we are here to help.
-          </p>
-          <p className="text-gray-700 mb-4 text-sm">
-          Ibuye, meaning ‘’stone’’,  was born out of a need to guide those unsure of where to start and who to trust. Many have shared that this uncertainty holds them back from making investment decisions.
-          </p>
-          <p className="text-gray-700 mb-4 text-sm">
-          Over the years, we have helped individuals and businesses achieve their real estate goals through consulting, development, and renovation for both residential and commercial projects. We know how important it is to have a reliable partner, and we are here to walk with you every step of the way.
-          </p>
-          <p className="text-gray-700 text-sm">
-            We believe in building long-term relationships with our clients, based on trust, transparency, and exceptional service. Let us be your partner in finding the perfect property.
-          </p>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Story</h3>
+
+          <div className="space-y-4 text-gray-700 text-base leading-relaxed">
+            <p>
+              Rwanda is a growing hub for real estate. Whether you're looking for an investment property, vacation home, commercial building, or land – self-built or existing, in Kigali or beyond – we are here to help.
+            </p>
+            <p>
+              Ibuye, meaning “stone,” was born out of a need to guide those unsure of where to start and who to trust. Many have shared that this uncertainty holds them back from making investment decisions.
+            </p>
+            <p>
+              Over the years, we have helped individuals and businesses achieve their real estate goals through consulting, development, and renovation for both residential and commercial projects.
+            </p>
+            <p>
+              We believe in building long-term relationships with our clients, based on trust, transparency, and exceptional service. Let us be your partner in finding the perfect property.
+            </p>
+          </div>
         </div>
       </div>
     </div>

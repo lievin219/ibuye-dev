@@ -8,59 +8,48 @@ const OverlayCard = ({ position = 'right' }) => {
       <img
         src={brian}
         alt="Property"
-        className="w-full h-auto rounded-md object-cover shadow-lg"
+        className="w-full h-auto rounded-xl object-cover shadow-xl"
       />
 
-      {/* Floating box on large screens, stacked on small screens */}
+      {/* Floating box on large screens */}
       <div
-        className={`bg-white bg-opacity-95 p-4 sm:p-5 md:p-6 rounded-md shadow-md w-full max-w-full sm:max-w-sm md:max-w-md text-sm backdrop-blur-sm
-        absolute ${position === 'right' ? 'right-4' : 'left-4'} bottom-4
-        hidden sm:block`}
+        className={`bg-white bg-opacity-95 p-6 md:p-8 rounded-xl shadow-lg max-w-md text-sm backdrop-blur-sm
+        absolute ${position === 'right' ? 'right-6' : 'left-6'} bottom-6 hidden sm:block`}
       >
-        <h3 className="text-lg sm:text-xl font-semibold text-black mb-2">RESIDENTIAL FORT’D</h3>
-        <p className="text-gray-600 text-sm sm:text-base mb-2">
-          This Visualization Project Is About The Building In The Historical Center Of Omsk City, Russia.
-          Initially, It Was Built As A Hostel For The 2018 FIFA World Cup, But The Project Was Not Completed As Supposed.
+        <h3 className="text-xl font-bold text-gray-800 mb-3">RESIDENTIAL FORT’D</h3>
+        <p className="text-gray-600 mb-3 text-sm">
+          This visualization project showcases a modern building in the historic center of Omsk, Russia. Originally built as a 2018 FIFA World Cup hostel, it remains a landmark.
         </p>
-        <div className="text-gray-700 mb-1">
-          <strong>LOCATION:</strong> KINYINYA KIGALI
-        </div>
-        <div className="text-gray-700 mb-1">
-          <strong>PROJECT TYPE:</strong> Residential
-        </div>
-        <div className="text-gray-700 mb-2">
+        <div className="text-gray-700 text-sm mb-1"><strong>LOCATION:</strong> KINYINYA KIGALI</div>
+        <div className="text-gray-700 text-sm mb-1"><strong>PROJECT TYPE:</strong> Residential</div>
+        <div className="text-gray-700 text-sm mb-3">
           <strong>KEY FEATURES:</strong>
-          <ul className="list-disc list-inside text-gray-600 text-xs sm:text-sm">
+          <ul className="list-disc list-inside text-xs mt-1">
             <li>New Landmark</li>
             <li>Spacious Interior</li>
             <li>Artificial Marble Suits</li>
           </ul>
         </div>
-        <button className="mt-2 text-black underline hover:text-black">DOWNLOAD BROCHURE</button>
+        <button className="mt-2 text-sm text-blue-600 hover:underline font-medium">DOWNLOAD BROCHURE</button>
       </div>
 
-      {/* For small screens — show below the image */}
-      <div className="block sm:hidden mt-4 bg-white p-4 rounded-md shadow-md">
-        <h3 className="text-lg font-semibold text-black mb-2">RESIDENTIAL FORT’D</h3>
+      {/* Mobile view */}
+      <div className="block sm:hidden mt-4 bg-white p-5 rounded-xl shadow-lg">
+        <h3 className="text-lg font-bold text-gray-800 mb-2">RESIDENTIAL FORT’D</h3>
         <p className="text-gray-600 text-sm mb-2">
-          This Visualization Project Is About The Building In The Historical Center Of Omsk City, Russia.
-          Initially, It Was Built As A Hostel For The 2018 FIFA World Cup, But The Project Was Not Completed As Supposed.
+          This visualization project showcases a modern building in the historic center of Omsk, Russia. Originally built as a 2018 FIFA World Cup hostel, it remains a landmark.
         </p>
-        <div className="text-gray-700 mb-1 text-sm">
-          <strong>LOCATION:</strong> KINYINYA KIGALI
-        </div>
-        <div className="text-gray-700 mb-1 text-sm">
-          <strong>PROJECT TYPE:</strong> Residential
-        </div>
-        <div className="text-gray-700 mb-2 text-sm">
+        <div className="text-gray-700 mb-1 text-sm"><strong>LOCATION:</strong> KINYINYA KIGALI</div>
+        <div className="text-gray-700 mb-1 text-sm"><strong>PROJECT TYPE:</strong> Residential</div>
+        <div className="text-gray-700 text-sm mb-3">
           <strong>KEY FEATURES:</strong>
-          <ul className="list-disc list-inside text-gray-600 text-xs">
+          <ul className="list-disc list-inside text-xs mt-1">
             <li>New Landmark</li>
             <li>Spacious Interior</li>
             <li>Artificial Marble Suits</li>
           </ul>
         </div>
-        <button className="mt-2 text-black underline hover:text-black">DOWNLOAD BROCHURE</button>
+        <button className="mt-2 text-sm text-blue-600 hover:underline font-medium">DOWNLOAD BROCHURE</button>
       </div>
     </div>
   );
@@ -68,25 +57,28 @@ const OverlayCard = ({ position = 'right' }) => {
 
 const Servic = () => {
   return (
-    <div className="bg-white px-4 py-16 space-y-12 py-20">
+    <div className="bg-gray-50 px-4 sm:px-6 lg:px-20 py-20 pt-40">
       {/* Header */}
-      <div className="max-w-5xl mx-auto mb-6">
-        <h2 className="text-3xl font-bold text-black-800 mb-2 text-left">OUR PORTOFOLIO</h2>
-        <p className="text-gray-600 text-sm md:text-base max-w-4xl">
-          These project details can be customized and expanded upon for each property listing on your real estate website.
-          Providing comprehensive and accurate information helps potential buyers make informed decisions about the properties you have available.
+      <div className="max-w-5xl mx-auto mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">OUR PORTFOLIO</h2>
+        <p className="text-gray-600 text-sm md:text-base">
+          Discover projects designed with attention to detail and modern architecture. We help clients find dream homes or investment opportunities with full transparency and passion.
         </p>
       </div>
 
-      {/* Two components: one with right overlay, one with left overlay */}
-      <div className="max-w-5xl mx-auto space-y-12">
+      {/* Portfolio Cards */}
+      <div className="max-w-6xl mx-auto space-y-20">
         <OverlayCard position="right" />
         <OverlayCard position="left" />
       </div>
-      <h1 className='justify-center text-black-800 underline'> Load more</h1>
+
+      {/* Load More */}
+      <div className="text-center mt-12">
+        <button className="text-blue-600 underline font-medium hover:text-blue-800 transition-all duration-200">
+          Load More
+        </button>
+      </div>
     </div>
-  
-   
   );
 };
 

@@ -3,7 +3,7 @@ import { InlineWidget } from "react-calendly";
 
 const Plan = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-10 px-4 md:px-20 py-20">
+    <div className="min-h-screen bg-gray-100  px-4 md:px-20 py-20 pt-40">
       <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-6">
         Schedule a Meeting
       </h1>

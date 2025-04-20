@@ -5,7 +5,7 @@ import servicess from '/brian.jpg'
 
 const Portofolio = () => {
   return (
-    <section className="bg-white py-10 px-6">
+    <section className="bg-white  px-6 ">
     <h2 className="text-2xl font-bold mb-6">OUR PORTOFOLIO</h2>
 
     <div className="flex flex-col md:flex-row items-center bg-gray-100 rounded-xl shadow-md overflow-hidden">

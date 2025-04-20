@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhyRwandaPage = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-left mb-8">
