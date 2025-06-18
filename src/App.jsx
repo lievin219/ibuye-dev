@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navabar'
+import Greet from './Pages/Greet.jsx'
 import Footer from './components/Footer'
 import Servic from './Pages/Servic'
 import ResidentialFortD from './Pages/ResidentialFordD'
@@ -20,10 +21,12 @@ function App() {
       <div className="relative z-0">
         <Routes>
           <Route path="/service" element={<ServicesPage />} />
+           <Route path="/Exercise" element={<Greet />} />
           <Route path="/about" element={<About />} />
           <Route path="/home" element={<Home />} />
           <Route path="/portfolio" element={<Servic />} />
           <Route path="/whyrwanda" element={<WhyRwandaPage />} />
+          <Route path="/residential-ford" element={<ResidentialFortD />} />
           <Route path="/meeting" element={<Plan />} />
         </Routes>
         <Footer />

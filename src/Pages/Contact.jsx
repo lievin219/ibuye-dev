@@ -5,22 +5,22 @@ const Contact = () => {
     <section className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-20">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left Side */}
-        <div className="bg-gradient-to-br from-blue-900 to-blue-600 text-white p-8 md:p-10 rounded-2xl shadow-xl flex flex-col justify-center">
+        <div className="bg-gradient-to-br from-blue-800 to-blue-500 text-white p-8 md:p-10 rounded-2xl shadow-xl flex flex-col justify-center [font-family:'Times_New_Roman',Times,serif]">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Let's Talk</h1>
-          <p className="text-sm md:text-base text-blue-100 leading-relaxed">
+          <p className="text-sm md:text-base text-orange-100 leading-relaxed">
             Got a question, feedback, or business inquiry? We’d love to hear from you.
             Fill in the form and we’ll get back to you as soon as possible.
           </p>
 
-          <div className="mt-8 md:mt-10 space-y-2 text-sm md:text-base text-blue-100">
+          <div className="mt-8 md:mt-10 space-y-2 text-sm md:text-base text-orange-100">
             <p><span className="font-medium">Phone:</span> +123 456 789</p>
             <p><span className="font-medium">Email:</span> support@ibuye.com</p>
-            <p><span className="font-medium">Location:</span> Nairobi, Kenya</p>
+            <p><span className="font-medium">Location:</span> Kigali, Rwanda</p>
           </div>
         </div>
 
         {/* Right Side Form */}
-        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-xl">
+        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-xl [font-family:'Times_New_Roman',Times,serif]">
           <form className="space-y-6">
             {/* Name */}
             <div className="relative">
@@ -90,7 +90,7 @@ const Contact = () => {
             <div className="text-right">
               <button
                 type="submit"
-                className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 shadow-md"
+                className="w-full sm:w-auto bg-blue-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 shadow-md"
               >
                 Send Message
               </button>

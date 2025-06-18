@@ -3,9 +3,9 @@ import { FaQuestionCircle, FaHome, FaKey, FaUserShield } from "react-icons/fa";
 
 const Questions = () => {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 py-16">
+    <div className="max-w-screen-xl mx-auto px-4 py-16 [font-family:'Times_New_Roman',Times,serif]">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-        Got Any Questions About IBUYE? <span role="img" aria-label="thinking">🤔</span>
+        Got Any Questions About IBUYE? <span role="img" aria-label="thinking"></span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
