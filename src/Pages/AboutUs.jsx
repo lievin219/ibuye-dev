@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <section className="px-6 md:px-20 py-16 bg-white">
       <div className="max-w-7xl mx-auto">
-        {/* Title */}
+      
         <h2 className="text-4xl md:text-5xl font-bold mb-10">
           <span className="text-blue-600">About</span>{' '}
           <span className="text-black">Us </span>
